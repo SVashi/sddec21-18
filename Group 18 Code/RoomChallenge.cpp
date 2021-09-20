@@ -4,15 +4,14 @@
 #include <sstream>
 using namespace std;
 
-vector<double> readData(string file)
+//Currently just reading a test csv, needs to be changed to full csv
+vector<double> readCSV(string file)
 {
     vector<double> result;
     string line;
     ifstream data (file);
     if (data.is_open())
     {
-        int average;
-        int count;
         while (getline(data, line))
         {
             stringstream ss(line);
@@ -32,10 +31,22 @@ vector<double> readData(string file)
 }
 
 //Used for testing purposes
-void showlist(vector<double> data)
+void showList(vector<double> data)
 {
     for (auto iter = data.begin(); iter != data.end(); ++iter)
     {
         cout << *iter << " ";
     }
+}
+
+//Returns average to compare to main value
+double calculateAverage(vector<double> data)
+{
+    double average;
+
+    for (auto iter = data.begin(); iter != data.end(); ++iter)
+    {
+        average = average + *iter;
+    }
+    return average/data.size();
 }

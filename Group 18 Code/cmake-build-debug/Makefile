@@ -128,6 +128,30 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+CommonData.obj: CommonData.cpp.obj
+.PHONY : CommonData.obj
+
+# target to build an object file
+CommonData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/CommonData.cpp.obj
+.PHONY : CommonData.cpp.obj
+
+CommonData.i: CommonData.cpp.i
+.PHONY : CommonData.i
+
+# target to preprocess a source file
+CommonData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/CommonData.cpp.i
+.PHONY : CommonData.cpp.i
+
+CommonData.s: CommonData.cpp.s
+.PHONY : CommonData.s
+
+# target to generate assembly for a file
+CommonData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/CommonData.cpp.s
+.PHONY : CommonData.cpp.s
+
 RoomChallenge.obj: RoomChallenge.cpp.obj
 .PHONY : RoomChallenge.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
+	@echo ... CommonData.obj
+	@echo ... CommonData.i
+	@echo ... CommonData.s
 	@echo ... RoomChallenge.obj
 	@echo ... RoomChallenge.i
 	@echo ... RoomChallenge.s

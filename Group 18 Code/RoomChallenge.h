@@ -1,3 +1,4 @@
 using namespace std;
-vector<double> readData(string file);
-void showlist(vector<double> data);
+vector<double> readCSV(string file);
+void showList(vector<double> data);
+double calculateAverage(vector<double> data);

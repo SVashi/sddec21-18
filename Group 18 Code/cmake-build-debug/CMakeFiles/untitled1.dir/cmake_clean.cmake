@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled1.dir/CommonData.cpp.obj"
   "CMakeFiles/untitled1.dir/RoomChallenge.cpp.obj"
   "CMakeFiles/untitled1.dir/main.cpp.obj"
   "libuntitled1.dll.a"
