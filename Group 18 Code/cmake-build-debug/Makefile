@@ -128,6 +128,30 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+RoomChallenge.obj: RoomChallenge.cpp.obj
+.PHONY : RoomChallenge.obj
+
+# target to build an object file
+RoomChallenge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/RoomChallenge.cpp.obj
+.PHONY : RoomChallenge.cpp.obj
+
+RoomChallenge.i: RoomChallenge.cpp.i
+.PHONY : RoomChallenge.i
+
+# target to preprocess a source file
+RoomChallenge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/RoomChallenge.cpp.i
+.PHONY : RoomChallenge.cpp.i
+
+RoomChallenge.s: RoomChallenge.cpp.s
+.PHONY : RoomChallenge.s
+
+# target to generate assembly for a file
+RoomChallenge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/RoomChallenge.cpp.s
+.PHONY : RoomChallenge.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
+	@echo ... RoomChallenge.obj
+	@echo ... RoomChallenge.i
+	@echo ... RoomChallenge.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
